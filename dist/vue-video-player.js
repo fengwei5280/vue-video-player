@@ -139,7 +139,7 @@
         initialize: function () {
           var e = this,
             t = Object.assign({}, this.globalOptions, this.options);
-          if (this.options && this.options.poster) {
+          if (this.options && this.options.poster && this.$refs.video) {
             this.$refs.video.setAttribute('poster', this.options.poster);
           }
           this.playsinline && (this.$refs.video.setAttribute("playsinline", this.playsinline), this.$refs.video.setAttribute("webkit-playsinline", this.playsinline), this.$refs.video.setAttribute("x5-playsinline", this.playsinline), this.$refs.video.setAttribute("x5-video-player-type", "h5"), this.$refs.video.setAttribute("x5-video-player-fullscreen", !1)), "" !== this.crossOrigin && (this.$refs.video.crossOrigin = this.crossOrigin, this.$refs.video.setAttribute("crossOrigin", this.crossOrigin));
